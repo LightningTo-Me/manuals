@@ -9,6 +9,10 @@
    * [Can I request a channel with more capacity?](#can-i-request-a-channel-with-more-capacity)
    * [Are there any alternatives?](#are-there-any-alternatives)
  - [Troubleshooting](#troubleshooting)
+   * [Wrong public key (unable to find node)](#wrong-public-key-unable-to-find-node)
+   * [No public address associated with the key](#no-public-address-associated-with-the-key)
+   * [Number of pending channels exceed maximum](#number-of-pending-channels-exceed-maximum)
+   * [Various connection and timeout errors](#various-connection-and-timeout-errors)
  - [I have a question not answered here!](#i-have-a-question-not-answered-here)
 
 ## Requesting a channel
@@ -50,6 +54,25 @@ Write to contact@lightningto.me about your use case and we will see what we can 
 You can use [Bitrefill's Thor](https://medium.com/@bitrefill/2d6ffbad3906). It is great, check it out! Keep in mind though that it will cost you ~3 dollars a month for a 0.02 BTC channel.
 
 ## Troubleshooting
+
+#### Wrong public key (unable to find node)
+
+Make sure you configured your node as public, not private. If your node is very new, just wait a couple of hours (the information about your node needs some time to propagate through the network). If you see your node on explorers like 1ml.com and still get this message, please contact us.
+
+#### No public address associated with the key
+
+Make sure that your node is advertising its external IP address (for lnd you should have `externalip` set), otherwise peers will not be able to establish connections to your node.
+
+#### Number of pending channels exceed maximum
+
+Just wait and try again later.
+
+#### Various connection and timeout errors
+
+ * __Is your node behind NAT/firewall/router?__ Make sure your ports are properly forwarded. You should be able to `telnet your_ip your_ln_port` from another machine, otherwise something is wrong.
+ * __Is your node online?__ Make sure the lightning software running and that is has finished all the startup tasks (can take a couple of hours).
+ * __Does your node have a dynamic IP address?__ Make sure your node is advertising the right IP address publicly and consider switching to a static IP.
+ * __Is your node behind Tor?__ Please establish connection to our node yourself and try again (for lnd the command is `lncli connect 03bb88ccc444534da7b5b64b4f7b15e1eccb18e102db0e400d4b9cfe93763aa26d@138.68.14.104:9735`).
 
 ## I have a question not answered here!
 
