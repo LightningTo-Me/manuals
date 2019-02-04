@@ -51,7 +51,7 @@ Write to contact@lightningto.me about your use case and we will see what we can 
 
 #### Are there any alternatives?
 
-You can use [Bitrefill's Thor](https://medium.com/@bitrefill/2d6ffbad3906). It is great, check it out! Keep in mind though that it will cost you ~3 dollars a month for a 0.02 BTC channel.
+As a direct alternative you can use [Bitrefill's Thor](https://medium.com/@bitrefill/2d6ffbad3906). It is great, check it out! Keep in mind though that it will cost you ~3 dollars a month for a 0.02 BTC channel. For more ways to get inbound capacity, check out [this article](http://medium.com/lightningto-me/60224aa13393).
 
 ## Troubleshooting
 
