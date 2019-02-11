@@ -23,7 +23,7 @@
 
 #### Why would anyone need that?
 
-In order to receive payments through lightning network, nodes need to have so-called *inbound capacity*. The easiest way to get inbound capacity is to ask another node to open a channel to you. This is exactly what we offer.
+In order to receive payments through lightning network, nodes need to have so-called *inbound capacity*. The easiest way to get inbound capacity is to ask another node to open a channel to you. This is exactly what we offer. [More on the topic.](http://medium.com/lightningto-me/60224aa13393)
 
 #### How do I request a channel?
 
