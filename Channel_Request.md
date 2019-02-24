@@ -13,7 +13,7 @@
    * [No public address associated with the key](#no-public-address-associated-with-the-key)
    * [Number of pending channels exceed maximum](#number-of-pending-channels-exceed-maximum)
    * [Local/remote feerates are too different](#localremote-feerates-are-too-different)
-   * [You should have at least 10 open channels / 0.01 BTC capacity](#you-should-have-at-least-10-open--channels-0-01-btc-capacity)
+   * [You should have at least 10 open channels / 0.01 BTC capacity](#you-should-have-at-least-10-open-channels--001-btc-capacity)
    * [Various connection and timeout errors](#various-connection-and-timeout-errors)
  - [I have a question not answered here!](#i-have-a-question-not-answered-here)
 
