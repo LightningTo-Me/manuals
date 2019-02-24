@@ -12,6 +12,7 @@
    * [Wrong public key (unable to find node)](#wrong-public-key-unable-to-find-node)
    * [No public address associated with the key](#no-public-address-associated-with-the-key)
    * [Number of pending channels exceed maximum](#number-of-pending-channels-exceed-maximum)
+   * [Local/remote feerates are too different](#local-remote-feerates-are-too-different)
    * [Various connection and timeout errors](#various-connection-and-timeout-errors)
  - [I have a question not answered here!](#i-have-a-question-not-answered-here)
 
@@ -66,6 +67,10 @@ Make sure that your node is advertising its external IP address (for lnd you sho
 #### Number of pending channels exceed maximum
 
 Just wait and try again later.
+
+#### Local/remote feerates are too different
+
+This is especially a [common issue](https://github.com/ACINQ/eclair-mobile/issues/118) with Eclair implementation. One option in this case is just to wait until the feerates stabilize and request a channel again. Another one is to increase your config to tolerate larger differences (`eclair.max-feerate-mismatch` for Eclair).
 
 #### Various connection and timeout errors
 
