@@ -12,7 +12,7 @@
    * [Wrong public key (unable to find node)](#wrong-public-key-unable-to-find-node)
    * [No public address associated with the key](#no-public-address-associated-with-the-key)
    * [Number of pending channels exceed maximum](#number-of-pending-channels-exceed-maximum)
-   * [Local/remote feerates are too different](#local-remote-feerates-are-too-different)
+   * [Local/remote feerates are too different](#localremote-feerates-are-too-different)
    * [Various connection and timeout errors](#various-connection-and-timeout-errors)
  - [I have a question not answered here!](#i-have-a-question-not-answered-here)
 
