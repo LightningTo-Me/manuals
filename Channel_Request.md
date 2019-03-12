@@ -14,6 +14,7 @@
    * [Number of pending channels exceed maximum](#number-of-pending-channels-exceed-maximum)
    * [Local/remote feerates are too different](#localremote-feerates-are-too-different)
    * [You should have at least 10 open channels / 0.01 BTC capacity](#you-should-have-at-least-10-open-channels--001-btc-capacity)
+   * ["Waiting for the server response..." hangs forever](#waiting-for-the server-response-hangs-forever)
    * [Various connection and timeout errors](#various-connection-and-timeout-errors)
  - [I have a question not answered here!](#i-have-a-question-not-answered-here)
 
@@ -76,6 +77,10 @@ This is especially a [common issue](https://github.com/ACINQ/eclair-mobile/issue
 #### You should have at least 10 open channels / 0.01 BTC capacity
 
 This check exists to prevent uncommitted users who are just starting to play around with a lightning node from requesting a channel. It is totally fine to request a channel if your node is new, but please show some dedication to the cause by opening some channels first.
+
+#### "Waiting for the server response..." hangs forever
+
+This probably means that connetion to your node fails with a timeout error (see the questions below).
 
 #### Various connection and timeout errors
 
