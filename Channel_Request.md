@@ -14,7 +14,7 @@
    * [Number of pending channels exceed maximum](#number-of-pending-channels-exceed-maximum)
    * [Local/remote feerates are too different](#localremote-feerates-are-too-different)
    * [You should have at least 10 open channels / 0.01 BTC capacity](#you-should-have-at-least-10-open-channels--001-btc-capacity)
-   * ["Waiting for the server response..." hangs forever](#waiting-for-the server-response-hangs-forever)
+   * [Waiting for the server response... hangs forever](#waiting-for-the-server-response-hangs-forever)
    * [Various connection and timeout errors](#various-connection-and-timeout-errors)
  - [I have a question not answered here!](#i-have-a-question-not-answered-here)
 
