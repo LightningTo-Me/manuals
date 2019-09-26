@@ -82,6 +82,10 @@ This check exists to prevent uncommitted users who are just starting to play aro
 
 This probably means that connetion to your node fails with a timeout error (see the questions below).
 
+#### Error: cannot connect to the peer (dial tcp: address [address].onion: no suitable address found)
+
+Do NOT include the IP address (@138.68.14.104:9735) of the connection string. Just include the public key (03bb88ccc444534da7b5b64b4f7b15e1eccb18e102db0e400d4b9cfe93763aa26d).
+
 #### Various connection and timeout errors
 
  * __Is your node behind NAT/firewall/router?__ Make sure your ports are properly forwarded. You should be able to `telnet your_ip your_ln_port` from another machine, otherwise something is wrong.
