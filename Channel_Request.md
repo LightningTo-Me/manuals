@@ -80,9 +80,9 @@ This check exists to prevent uncommitted users who are just starting to play aro
 
 #### "Waiting for the server response..." hangs forever
 
-This probably means that connetion to your node fails with a timeout error (see the questions below).
+This probably means that connection to your node fails with a timeout error (see the questions below).
 
-#### Various connection and timeout errors
+#### Various connection ("cannot connect to the peer") and timeout errors
 
  * __Is your node behind NAT/firewall/router?__ Make sure your ports are properly forwarded. You should be able to `telnet your_ip your_ln_port` from another machine, otherwise something is wrong.
  * __Is your node online?__ Make sure the lightning software running and that is has finished all the startup tasks (can take a couple of hours).
