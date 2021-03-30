@@ -13,7 +13,7 @@
    * [No public address associated with the key](#no-public-address-associated-with-the-key)
    * [Number of pending channels exceed maximum](#number-of-pending-channels-exceed-maximum)
    * [Local/remote feerates are too different](#localremote-feerates-are-too-different)
-   * [You should have at least 10 open channels / 0.01 BTC capacity](#you-should-have-at-least-10-open-channels--001-btc-capacity)
+   * [You should have at least 10 open channels / 0.05 BTC capacity](#you-should-have-at-least-10-open-channels--005-btc-capacity)
    * [Waiting for the server response... hangs forever](#waiting-for-the-server-response-hangs-forever)
    * [Various connection ("cannot connect to the peer") and timeout errors](#various-connection-cannot-connect-to-the-peer-and-timeout-errors)
  - [I have a question not answered here!](#i-have-a-question-not-answered-here)
@@ -74,7 +74,7 @@ Just wait and try again later.
 
 This is especially a [common issue](https://github.com/ACINQ/eclair-mobile/issues/118) with Eclair implementation. One option in this case is just to wait until the feerates stabilize and request a channel again. Another one is to increase your config to tolerate larger differences (`eclair.max-feerate-mismatch` for Eclair).
 
-#### You should have at least 10 open channels / 0.01 BTC capacity
+#### You should have at least 10 open channels / 0.05 BTC capacity
 
 This check exists to prevent uncommitted users who are just starting to play around with a lightning node from requesting a channel. It is totally fine to request a channel if your node is new, but please show some dedication to the cause by opening some channels first.
 
